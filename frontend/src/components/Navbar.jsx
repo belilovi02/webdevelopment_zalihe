@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../logo.png";
+//import logo from "../logo.png";
 import { useDispatch, useSelector } from "react-redux";
 import { LogOut, reset } from "../features/authSlice";
 
@@ -24,7 +24,8 @@ const Navbar = () => {
       >
         <div className="navbar-brand">
           <NavLink to="/dashboard" className="navbar-item">
-            <img src={logo} width="112" height="28" alt="logo" />
+            LOGO
+            {/* <img src={logo} width="112" height="28" alt="logo" /> */}
           </NavLink>
 
           <a
