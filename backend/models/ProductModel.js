@@ -39,7 +39,7 @@ const Products = db.define('product',{
     freezeTableName: true
 });
 
-Users.hasMany(Products);
-Products.belongsTo(Users, {foreignKey: 'userId'});
+Users.hasMany(Products); //sirovina 
+Products.belongsTo(Users, {foreignKey: 'userId'}); //dobavljac
 
 export default Products;

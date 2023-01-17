@@ -77,7 +77,7 @@ export const createProduct = async(req, res) =>{
             price: price,
             userId: req.userId
         });
-        res.status(201).json({msg: "Product kreiran"});
+        res.status(201).json({msg: "Product created"});
     } catch (error) {
         res.status(500).json({msg: error.message});
     }
